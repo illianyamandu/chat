@@ -7,6 +7,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['auth', 'verified'], function () {
+    Route::get('/dashboard', fn () => view('dashboard'))->name('dashboard');
+    Route::get('/chat', fn () => view('chat'))->name('chat');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
