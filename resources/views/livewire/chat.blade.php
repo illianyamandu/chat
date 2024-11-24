@@ -4,7 +4,7 @@
             SERES HUMANINHOS
             <hr>
         </div>
-        <div class="p-2 h-[]">
+        <div class="p-2">
             <div>
                 @foreach($users as $user)
                     @if ($user->id != auth()->id())                    
