@@ -17,6 +17,6 @@ class ChatPage extends Component
 
     public function render()
     {
-        return view('livewire.chat-page');
+        return view('livewire.chat-page')->layout('layouts.app');
     }
 }
