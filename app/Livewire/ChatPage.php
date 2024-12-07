@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Collection;
 use Livewire\Component;
 
-class Chat extends Component
+class ChatPage extends Component
 {
     public Collection $users;
 
@@ -17,6 +17,6 @@ class Chat extends Component
 
     public function render()
     {
-        return view('livewire.chat');
+        return view('livewire.chat-page');
     }
 }
